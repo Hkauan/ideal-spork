@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #121213);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(20, 20, 30, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00d4ff;
+    animation: glow 2s infinite alternate;
+}
+
+form {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input,
+button {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+input {
+    flex: 1;
+    background: #2a2a3c;
+    color: #fff;
+}
+
+button {
+    background: #00d4ff;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00a3cc;
+    transform: scale(1.05);
+}
+
+#task-groups {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #2a2a3c;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+li.completed {
+    background: #00d4ff;
+    color: #000;
+    text-decoration: line-through;
+}
+
+li .delete-btn {
+    background: #ff4b4b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+li .delete-btn:hover {
+    background: #ff2a2a;
+}
